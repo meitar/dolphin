@@ -441,8 +441,8 @@ union RAS1_IREF
     };
     u32 hex;
 
-    u32 getTexCoord(int i) { return (hex>>(6*i+3))&3; }
-    u32 getTexMap(int i) { return (hex>>(6*i))&3; }
+    u32 getTexCoord(int i) { return (hex>>(6*i+3))&7; }
+    u32 getTexMap(int i) { return (hex>>(6*i))&7; }
 };
 
 
